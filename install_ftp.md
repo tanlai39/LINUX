@@ -117,6 +117,9 @@ restore cấu hình từ ftp ra thiết bị
 copy ftp://tpcftp:Tpcloud#123@172.22.22.24/switch-router/full-backup-ASR1000X.cfg running-config
 ```
 
+# Sử dụng filezila trên máy client để kết nối
+![image](https://github.com/user-attachments/assets/9ac6cc6c-3a88-4773-a020-b1456b6e2bdd)
+
 
 
 
