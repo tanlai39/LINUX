@@ -39,6 +39,8 @@ server {
     }
 }
 ```
+với cấu hình này chỉ forward traffic https, nếu server ngoài https còn các giao thức khác thì cần bổ sung cấu hình
+
 # Kích hoạt cấu hình
 ```
 sudo ln -s /etc/nginx/sites-available/proxy /etc/nginx/sites-enabled/
