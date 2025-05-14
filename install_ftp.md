@@ -121,5 +121,17 @@ copy ftp://tpcftp:Tpcloud#123@172.22.22.24/switch-router/full-backup-ASR1000X.cf
 ![image](https://github.com/user-attachments/assets/9ac6cc6c-3a88-4773-a020-b1456b6e2bdd)
 
 
+# Một số tùy chỉnh cho server
+1.mặc định account tpcftp ssh vào server được, để chặn không cho account ssh vào ta làm như sau:
 
+Thêm vào cuối /etc/ssh/sshd_config
+
+```
+DenyUsers tpcftp
+```
+restart service ssh
+
+```
+sudo systemctl restart ssh
+```
 
