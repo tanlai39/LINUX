@@ -6,7 +6,9 @@ Client (Internet)
         ↓
 61.14.236.210 (Proxy server)
         ↓
-Proxy forward HTTPS → 61.14.236.211:14043 (Web Server trên LAN qua edge-gateway NAT)
+Proxy forward HTTPS → 61.14.236.211:14043
+        ↓
+edge 61.14.236.211 DNAT 14043 vào server web có ip local
 ```
 # Cài Nginx
 ```
