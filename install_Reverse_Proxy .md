@@ -61,7 +61,10 @@ sau khi thêm bản ghi này mới tiếp tục generate cert
 sau khi có cert, copy cert đên đúng đường dẫn đã cấu hình trong file cấu hình /etc/nginx/sites-available/proxy.
 Hoặc ngược lại sửa lại đường dẫn file cấu hình
 
-
+# Cấu hình trên edge gateway
+tạo rule firewall , chặn truy cập từ any vào server web port 443,
+chỉ cho phép truy cập từ con proxy đến server web port 443
+![image](https://github.com/user-attachments/assets/422f551c-30b9-45c5-87a4-338197a32886)
 
 
 
