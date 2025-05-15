@@ -1,5 +1,7 @@
 # HƯỚNG DẪN CÀI OPEN VPN
 
+cần DNAT port UDP 1194 từ ngoài vào server open vpn
+
 # Cập nhật hệ thống
 
 ```
@@ -200,36 +202,29 @@ Có thể tùy chỉnh template profile để mặc định tạo các profile k
 ```
 vi /etc/openvpn/client-template.txt
 ```
-
-```
-client
-proto udp
-explicit-exit-notify
-remote 61.14.236.211 1194
-dev tun
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-remote-cert-tls server
-verify-x509-name server_I6w4V2ZCLELzH8Dn name
-auth SHA256
-auth-nocache
-cipher AES-128-GCM
-tls-client
-tls-version-min 1.2
-tls-cipher TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256
-ignore-unknown-option block-outside-dns
-# setenv opt block-outside-dns # Prevent Windows 10 DNS leak
-route-nopull
-route 172.22.22.0 255.255.255.0
-verb 3
-```
+cấu hình profile template như trên
 
 # restart service
 
 ```
 systemctl restart openvpn@server.service
+```
+
+# Add thêm profile
+
+```
+root@OPENVPN:~# ./ubuntu-22.04-lts-vpn-server.sh
+Welcome to OpenVPN-install!
+The git repository is available at: https://github.com/angristan/openvpn-install
+
+It looks like OpenVPN is already installed.
+
+What do you want to do?
+   1) Add a new user
+   2) Revoke existing user
+   3) Remove OpenVPN
+   4) Exit
+Select an option [1-4]:
 ```
 
 
