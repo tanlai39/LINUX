@@ -107,14 +107,14 @@ archive
 copy cấu hình runing-config vào ftp
 
 ```
-copy running-config ftp://tpcftp:Tpcloud#123@172.22.22.24/switch-router/full-backup-ASR1000X.cfg
+copy running-config ftp://tpcftp:xxxxxxxxx@172.22.22.24/switch-router/full-backup-ASR1000X.cfg
 
 ```
 
 restore cấu hình từ ftp ra thiết bị
 
 ```
-copy ftp://tpcftp:Tpcloud#123@172.22.22.24/switch-router/full-backup-ASR1000X.cfg running-config
+copy ftp://tpcftp:xxxxxxxxx@172.22.22.24/switch-router/full-backup-ASR1000X.cfg running-config
 ```
 
 # Sử dụng filezila trên máy client để kết nối
