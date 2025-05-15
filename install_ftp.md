@@ -97,7 +97,7 @@ sudo systemctl status vsftpd
 archive
  log config
   hidekeys
- path ftp://tpcftp:Tpcloud#123@172.22.22.24/switch-router/$h_
+ path ftp://tpcftp:xxxxxxxxxxxx@172.22.22.24/switch-router/$h_
  write-memory
  time-period 10080
 ```
