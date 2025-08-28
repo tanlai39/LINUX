@@ -139,7 +139,7 @@ tke-k8s          IN  A       10.0.0.30
 ```
 
 ```
-vi tanlv.io.vn
+vi /etc/bind/tanlv.io.vn
 ```
 
 ```
