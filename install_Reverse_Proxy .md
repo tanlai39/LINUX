@@ -60,6 +60,10 @@ giá trị BUdh97b__T92SNzWqRQ8dr2F-APh5EfBev5_dneBCdU được tạo ra khi ch�
 
 ![image](https://github.com/user-attachments/assets/0ff8d1c8-600c-42ce-a7a8-5794d3d7ecb7)
 
+check trên cmd
+
+nslookup -type=TXT _acme-challenge.tanlv.io.vn 8.8.8.8
+
 sau khi thêm bản ghi này mới tiếp tục generate cert
 
 sau khi có cert, copy cert đên đúng đường dẫn đã cấu hình trong file cấu hình /etc/nginx/sites-available/proxy.
