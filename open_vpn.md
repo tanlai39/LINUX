@@ -10,7 +10,7 @@ apt -y update && apt -y upgrade
 # Tải và cài đặt OpenVPN từ Script
 
 ```
-wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh -O ubuntu-22.04-lts-vpn-server.sh
+https://raw.githubusercontent.com/tanlai39/LINUX/main/ubuntu-22.04-lts-vpn-server.sh
 ```
 
 cấp quyền thực thi
