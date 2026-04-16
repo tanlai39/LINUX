@@ -51,7 +51,7 @@ sudo systemctl reload nginx
 
 ```
 sudo apt install certbot python3-certbot-nginx -y
-certbot certonly   --manual   --preferred-challenges dns   --key-type rsa   --rsa-key-size 2048   -d "*.tpcloud.vn"   -d tpcloud.vn
+certbot certonly   --manual   --preferred-challenges dns   --key-type rsa   --rsa-key-size 2048   -d "*.tpcloud.vn"
 ```
 
 thêm bản ghi này vào PA VN
